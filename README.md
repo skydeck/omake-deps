@@ -1,4 +1,5 @@
 omake-deps
 ==========
 
-Produce OMake dependencies between local OCaml source directories
+Produce lists of indirect dependencies between OCaml libraries
+to be compiled with omake.

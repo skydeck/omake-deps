@@ -1,0 +1,15 @@
+# Direct dependencies between OCaml libraries for powder
+
+logging: util
+powderlib: logging
+sendgrid: powderlib
+powdertypes: elasticsearch
+riak-client: powderlib
+message: powderlib powdertypes riak-client
+account: message
+http: powderlib
+amazon: powderlib powdertypes http
+conf: powderlib
+elastictest: util elasticsearch
+profile: logging powdertypes powderlib riak-client
+powder: logging elasticsearch http message account profile
